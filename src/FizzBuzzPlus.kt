@@ -1,7 +1,7 @@
 import kotlin.test.assertEquals
 
 fun Int.hasThree(): Boolean {
-    if(this.toString().indexOf('3') != -1) return true
+    if(this.toString().indexOf(char = '3') != -1) return true
     return false
 }
 
@@ -58,7 +58,7 @@ fun getFizzBuzz(n: Int): String {
         result += "Buzz"
     }
 
-    if (result.isNullOrEmpty()) {
+    if (result.isEmpty()) {
         result = "$n"
     }
 
